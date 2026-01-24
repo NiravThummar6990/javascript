@@ -23,17 +23,22 @@ console.log(newString);
 const anotherString = gameName.slice(-8,4)
 console.log(anotherString);
 
+
+// trim
 const n1="     hyyy       "
 console.log(n1.trim());
 
+
+// replace
 const url = "https://nirav.com/nirav%20thummar"
 
 url.replace('%20',"------")
 console.log(url.replace('%20',"------"));
 
+// include
 console.log(url.includes("200000"));
 
-
+// Split
 const spit = ("nirav-thummar-6990")
 const otoSpit = spit.split('-')
 console.log(otoSpit);
