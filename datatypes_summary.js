@@ -33,3 +33,20 @@ const muFunction = function(){
 }
 
 console.log(typeof muFunction);
+
+
+
+//====================================================================================
+
+
+// memory
+
+// Stack memory (primitive)(copy data male) , Heap (Non-primitie)(original data male aetle k reference male)
+
+let myYoutubename = "Nirav"
+
+let anothername = myYoutubename
+anothername="chaiorcode"
+
+console.log(anothername);
+console.log(myYoutubename);
