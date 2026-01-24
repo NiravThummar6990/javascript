@@ -20,3 +20,28 @@ console.log(inbul);
 // 1 => true
 // "nirav" => true
 // "" => false
+
+
+// ********************************   Operation   ****************************************
+
+let value = 3;
+let negvalue=-value
+console.log(negvalue);
+
+console.log(2+2) // -,/,*,**,%
+
+// console.log("1" + 2)
+// console.log(1 + "2")
+// console.log("1" + 2 + 2)
+// console.log(1 + 2 + "2")
+
+// console.log(+true);
+// console.log(+"");
+
+let n1, n2, n3;
+n1 = n2 = n3 = 2 + 2;
+console.log(n1)
+
+let gameCounter=100;
+++gameCounter;
+console.log(gameCounter);
