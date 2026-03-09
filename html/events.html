@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body bgcolor="grey">
+    <h2>Amazing images</h2>
+    <div>
+      <ul id="images">
+        <li>
+          <img
+            width="200px"
+            id="snowcity"
+            src="./city.jpg"
+            alt=" city between snow"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="river"
+            src="./river.jpg"
+            alt=" river near trees"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="snow"
+            src="./hills.jpg"
+            alt="snow hills between river"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="pangveen"
+            src="./pangveen.jpg"
+            alt="jump pangveen in snow"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="star"
+            src="./star.jpg"
+            alt="many star is bright"
+          />
+        </li>
+        <li id="google">
+          <a style="color: red" href="https://google.com">Google</a>
+        </li>
+      </ul>
+    </div>
+    <script>
+      // document.getElementById("images").addEventListener(
+      //   "click",
+      //   function (e) {
+      //     console.log("click inside ul");
+
+      //     // alert("river img click");
+      //   },
+      //   false,
+      // );
+
+      // document.getElementById("images").addEventListener(
+      //   "click",
+      //   function (e) {
+      //     console.log("click inside the ul");
+      //   },
+      //   false,
+      // );
+      // document.getElementById("snow").addEventListener(
+      //   "click",
+      //   function (e) {
+      //     console.log("click snow city img");
+      //     e.stopPropagation();
+      //   },
+      //   false,
+      // );
+
+      // document.getElementById("google").addEventListener(
+      //   "click",
+      //   function (e) {
+      //     e.preventDefault();
+      //     e.stopPropagation();
+      //     console.log("google click");
+      //   },
+      //   false,
+      // );
+
+      document.querySelector("#images").addEventListener(
+        "click",
+        function (e) {
+          console.log(e.target.tagName);
+          if (e.target.tagName === "IMG") {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode;
+            removeIt.remove();    
+          }
+        },
+        false,
+      );
+    </script>
+  </body>
+</html>
